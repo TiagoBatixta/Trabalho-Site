@@ -41,8 +41,8 @@ nav a:hover{
 #banner{
     margin-left: 225px;
     margin-right: auto;
-    width: 70%;
-    height: 500px;
+    width: 50%;
+    height: 00px;
 }
 
 .titulo_principal{
@@ -90,7 +90,7 @@ em strong{
 }
 
 footer{
-    background: url("../imagens/bg.jpg");
+    background-color: black;
     text-align: center;
     padding: 40px 0;
 }
