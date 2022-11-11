@@ -170,7 +170,7 @@ table{
 }
 
 thead{
-    background: #555555;
+    background: rgb(0, 24, 56);
     color: white;
     font-weight: bold;
 }
@@ -180,6 +180,9 @@ td, th{
     padding: 15px 8px;
 }
 
+td{
+  text-align: center;
+}
 
 /* Pagina inicial*/
 
@@ -291,6 +294,11 @@ td, th{
     width: 560px;
     margin: 3em auto;
 }
+
+.letreiro{
+    color: #FEFEFE;
+}
+
 
 @media screen and (max-width: 480px) {
     .caixa, .principal, .conteudo_bene, .mapa, .video{
