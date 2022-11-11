@@ -99,7 +99,7 @@ footer{
 
 .copyright{
     color: white;
-    font-size: 13px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -291,7 +291,7 @@ td{
 }
 
 .video{ 
-    width: 560px;
+    width: 780px;
     margin: 3em auto;
 }
 
