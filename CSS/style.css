@@ -35,7 +35,6 @@ nav a{
 }
 
 nav a:hover{
-    color: #9c350d;
     text-decoration: underline;
     font-size: 23px;
 }
@@ -187,7 +186,6 @@ td, th{
 .banner{
     margin-top: 10px;
     margin-left: 20%;
-    margin-right: 55%;
     orientation: center;
     width: 900px;
     height: 400px;
@@ -258,7 +256,7 @@ td, th{
 }
 
 .conteudo_bene{
-    width: 640px;
+    width: 750px;
     margin: 0 auto;
 }
 
@@ -267,6 +265,7 @@ td, th{
     margin-top: 20px;
     display: inline-block;
     vertical-align: top;
+    font-size: 20px;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -275,7 +274,7 @@ td, th{
 }
 
 .itens:before{
-    content: "\2606";
+    content: "\2022";
 }
 
 .img_bene{
