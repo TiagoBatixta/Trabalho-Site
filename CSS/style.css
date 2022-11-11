@@ -185,7 +185,12 @@ td, th{
 /* Pagina inicial*/
 
 .banner{
-    width: 100%;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 55%;
+    orientation: center;
+    width: 900px;
+    height: 400px;
 }
 
 .titulo_principal{
