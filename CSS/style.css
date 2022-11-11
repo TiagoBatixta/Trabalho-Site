@@ -193,7 +193,8 @@ td, th{
     font-size: 2em;
     margin-bottom: 1em;
     clear: left;
-    font-family: 'Shrikhand', cursive;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .principal{
