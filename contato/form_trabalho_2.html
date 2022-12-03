@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato</title>
+        <link rel="stylesheet" href="../CSS/reset.css">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="shortcut icon" href="../imagens/logo-branco.png">
+        <!-- Fonte para o conteudo*/ -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!--/*fonte para os titulos*/-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">        
+        <!--/*Fonte para o menu*/-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="../imagens/logo-branco.png" alt="JP - Security"></a></h1>
+                <nav>
+                    <ul> 
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Soluções</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main><br><br>
+            <h2 class="titulo_principal">Entre em contato com nossos consultores</h2>
+            <script>
+                function enviar(){          
+                if (document.form1.Nome.value.length<3){
+                    alert("Nome deve ter pelo menos 3 Letras!");   
+                    document.form1.Nome.select();
+                    document.form1.Nome.focus();
+                    return false;  
+                  }     
+               if (document.form1.email.value.indexOf("@")<0){
+                    alert("Email Invalido! Falta @");
+                    document.form1.email.select();
+                    document.form1.email.focus();
+                    return false;
+                  }
+                if (document.form1.email.value.indexOf(".")<0){
+                    alert("Email Invalido! falta um '.' ponto");
+                    document.form1.email.select();
+                    document.form1.email.focus();
+                    return false;
+                  } 
+                if (document.form1.telefone.value.length<11){
+                    alert("Insira um nomero de telefone válido!");
+                    document.form1.telefone.select();
+                    document.form1.telefone.focus();
+                    return false;
+                  } 
+                if (document.form1.mensagem.value.length<5){
+                    alert("Mensagem deve ter pelo menos 5 letras");
+                    document.form1.mensagem.select();
+                    document.form1.mensagem.focus();
+                    return false;
+                  } 
+                if (document.form1.contato[0].checked) 
+                    alert("Voce vai receber contato via Email!"); 
+                else if(document.form1.contato[1])
+                    alert("Voce vai receber contato via Whatsapp!");         
+              }
+             </script>
+
+            <form name="form1" action="mailto:emailteste@email.com" method="POST" enctype="text/plain" onSubmit="return enviar()";>  
+                
+                <label for="Nome">Nome: </label>
+                    <input type="text" id="Nome" name="Nome" class="input-padrao">
+
+                <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" class="input-padrao" placeholder="email@email.com"></input>
+
+                <label for="telefone">Telefone: </label>
+                    <input type="number" name="telefone" class="input-padrao" placeholder="(11) 91234-5678"></input>
+
+                <label for="mensagem">Mensagem: </label>
+                    <textarea cols="70" rows="10" name="mensagem" id="mensagem" class="input-padrao"></textarea>
+
+                <fieldset class="contato">
+                    <legend>Como prefere nosso Contato?</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email: </label>
+                        <label for="radio-whats"><input type="radio" name="contato" value="whats" id="radio-whats" checked> WhatsApp</label>                
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
+                    <input type="submit" value="Enviar" class="enviar"></input>
+                    <input type="reset" value="Limpar" class="enviar">
+            </form>
+        </main>
+        <footer>
+            <img src="../imagens/logo-branco.png" alt="Logo Barbearia">
+            <p class="copyright">&copy; Juliana Marques 21211357 | Tiago Batista 21206947</p>
+        </footer>
+    </body>
+</html>
